@@ -1,0 +1,35 @@
+//
+// MAIN PRODUCTION DEVCONTAINER CONFIG
+// Uses image that is pre-built and pushed to GitHub
+// See .github/.devcontainer/devcontainer.json for build
+//
+{
+    "name": "nextflow-training",
+    "image": "ghcr.io/nextflow-io/training:latest",
+    "workspaceFolder": "/workspaces/training",
+    "remoteUser": "root",
+    "remoteEnv": {
+        // Nextflow installation version
+        "NXF_HOME": "/workspaces/.nextflow",
+        "NXF_EDGE": "0",
+        "NXF_VER": "25.04.3",
+        // Other env vars
+        "HOST_PROJECT_PATH": "/workspaces/training",
+        "SHELL": "/bin/bash" // Ush bash
+    },
+    "onCreateCommand": "bash .devcontainer/setup.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "nf-core.nf-core-extensionpack",
+                "ms-vscode.live-server"
+            ],
+            // Use Python from conda
+            "settings": {
+                "python.defaultInterpreterPath": "/opt/conda/bin/python"
+            },
+            // Use bash
+            "terminal.integrated.defaultProfile.linux": "bash"
+        }
+    }
+}

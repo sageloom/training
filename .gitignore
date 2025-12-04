@@ -1,0 +1,10 @@
+.DS_Store
+.cache
+.idea
+serve
+work
+.nextflow*
+results
+transcript-index
+.vscode
+site/
