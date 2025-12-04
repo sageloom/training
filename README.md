@@ -1,8 +1,8 @@
 # Nextflow Training
 
-## <https://training.nextflow.io>
+## <https://sageloom.in>
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/sageloom.in/training?quickstart=1&ref=master)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/sageloom/training?quickstart=1&ref=master)
 
 <p align="center">
   <a href="https://nextflow.io/">
